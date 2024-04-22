@@ -1,0 +1,43 @@
+body {
+	background: linear-gradient(to right, #bbaaff, #f0e6ff);
+	font-family: Calibri;
+}
+
+
+#header {
+	color:#FFFFFF ;
+	background-color:#FFFFFF ;
+}
+#navigation {
+	background-color:#FFFFFF ;
+	color: red;
+	width: 30%;
+	height: 80px;
+	border-radius: 10px;
+	margin-left: 60%;
+	display: flex;
+    justify-content: space-between;
+}
+#navigation .nav-items{
+	margin-top: 10px;
+	margin-left: 2.5%;
+	margin-right: 2.5%;
+    background-color: blue;
+	width: 20%;
+	height: 60px;
+}
+
+#navigation img {
+    width: 50px;
+}
+
+#content {
+	width: 80%;
+	height: 300px;
+	margin: 30px auto;
+	border-radius: 10px;
+	border-radius: 35px 25px 3px;
+	-moz-border-radius: 35px 25px 3px;
+	background-color:#FFFFFF ;
+	
+}
