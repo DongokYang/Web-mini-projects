@@ -1,0 +1,290 @@
+/********w*************
+    
+    Project 1
+    Name: Dongok Yang
+    Date: 2024.02.21
+    Description: This CSS file serves as Project 1 for Design to Development.
+				It uses semantic elements and clean styling for the Hayden Planetarium website.
+
+**********************/
+
+html,
+body,
+section,
+p,
+header,
+nav,
+footer,
+div,
+article,
+aside,
+ol,
+ul,
+li,
+h1,
+h6 {
+
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-shadow: 0.2px -0.2px 1px rgb(113, 159, 200);
+}
+
+a:hover {
+    background-color: #006699;
+    color: white;
+    border-radius: 4px;
+}
+a:focus {
+    outline: 2px solid #006699;
+}
+
+body {
+	background-color: #e6e6e6;
+	font-family: 'Verdana', sans-serif;
+}
+
+div#container {
+	width: 810px;
+	background-color: #fff;
+	border-radius: 8px;
+	margin: 10px auto;
+	padding: 10px;
+	box-shadow: 1px 1px 2px #a2a2a2, -1px -1px 2px #a2a2a2;
+	
+}
+#logo{
+	background-image: url("images/logo.png");
+	height: 50px;
+	width: 100px;
+}
+
+.firstheader{
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+}
+.firstheader nav ol{
+    display: flex;
+    gap: 1px;
+	margin-bottom: 2px;
+}
+.firstheader nav li{
+    display: inline-block;
+	color: #006699;
+	font-size: 11px;
+}
+.firstheader nav a {
+	text-decoration: none;
+	color: #006699;
+	transition: 1s;
+	text-shadow: 0.2px -0.2px 1px rgb(113, 159, 200);
+}
+.firstheader li:not(:last-child)::after {
+	content: "|";
+	margin: 0 5px;
+}
+.firstheader form{
+	margin-bottom: 9px;
+}
+.firstheader input[type="search"] {
+	width: 85px; 
+}
+
+.secondheader{
+	background-image: url("images/headerBackground.jpg");
+	height: 200px;
+	width: 100%;
+	background-size: cover; 
+	display: flex;
+	justify-content: space-evenly;
+	background-repeat: no-repeat;
+}
+.secondheader h1{
+	margin-top: 27px;
+	margin-left: 16px;;
+	align-self: flex-start;
+	color: white;
+	font-weight: 100;
+	letter-spacing: 5px;
+	font-size: 36px; 
+	  
+}
+.secondheader h5{
+	align-self: flex-end;
+	margin-right: 23px;
+	color: white;
+	font-weight: 500;
+	font-style: italic;
+	letter-spacing: 1px;
+}
+
+#middle{  
+	background: linear-gradient(to bottom, #8DC3F7, #6EAFE2, #1172A5);
+	height: 25px;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+#middle ol{
+    display: flex;
+    gap: 1px;
+	margin-bottom: 5px;
+}
+#middle li{
+    display: inline-block;
+	color: #01527A;
+}
+#middle a {
+	text-decoration: none; /* Remove underline */
+	color: white;
+	font-size: 12px;
+}
+#middle li:not(:last-child)::after {
+	content: "|";
+	margin: 0 12px;
+	font-size: 14px;
+	text-shadow: 1px 0px 0px #c0dcfc;
+}
+
+main{
+	display: flex;
+}
+
+aside {
+	flex:0 0 180px;
+}
+aside li {
+    background: linear-gradient(to bottom, #F1F1F1, #DEDEDE, #CFCECE);
+    width: 100%;
+    height: 29px;
+    border-top: 1px solid #B7B7B7;
+	padding-left: 10px;
+	
+}
+aside li:first-child {
+	list-style: none;
+}
+aside a {
+	text-decoration: none;
+	color: black;
+	font-size: 10px;
+	font-weight: bold;
+	position: relative;
+	left: -10px;
+}
+aside li:first-child a {
+	margin-left: 10px;
+  }
+aside ul{
+	list-style-position: inside;
+	padding-bottom: 40px;
+}
+aside .aside-content{
+	color: gray;
+	font-size: 11px;
+	position: relative;
+}
+aside img{
+	float: right;
+}
+
+
+.main-content{
+	flex: 1;
+	margin: 8px 0 0 16px;
+}
+
+.main-content section#title a{
+	text-decoration: none; /* Remove underline */
+	color: #006699;
+	font-size: 10px;
+}
+.main-content #pageindicator{
+	font-size: 10px;
+}
+.main-content section#title h3{
+	font-weight: bold;
+	margin-bottom: 3px;
+}
+.main-content article h4{
+	margin-top: 0px;
+	margin-bottom: 20px;
+}
+.main-content article{
+	font-size: 13px;
+	line-height: 1.5;
+
+}
+.main-content article a{	
+	text-decoration: none; /* Remove underline */
+	color: #006699;
+	font-size: 13px;
+}
+.main-content #firstpart{
+	margin-bottom: 20px;
+}
+.main-content #secondpart{
+	margin-bottom: 20px;
+}
+
+.main-content #lastpart{
+	margin-left: 28px;
+	margin-bottom: 150px;
+}
+
+.main-content #lastpart p{
+	margin-bottom: 15px;
+}
+
+.main-content #Floating{
+	border: 1px solid lightgray;
+	float: right;
+	width: 255px;
+	padding: 5px;
+
+	font-size: 11px;
+}
+
+
+#firstline{  
+	display: flex;
+	justify-content: center;
+}
+footer ol{
+    display: flex;
+    gap: 1px;
+	margin-bottom: 5px;
+}
+footer li{
+    display: inline-block;
+	color: black;
+}
+footer a {
+	text-decoration: none; 
+	color: #006699;
+	font-size: 10px;
+}
+footer li:not(:last-child)::after {
+	content: "|";
+	margin: 0 5px;
+	font-size: 12px;
+}
+footer{
+	font-size: 10px;
+}
+#secondline{
+	display: flex;
+	justify-content: center;
+}
+#copyright{
+	margin-right: 5px;
+}
+#thirdline{
+	display: flex;
+	justify-content: center;
+}
+#address{
+	color: #808080;
+}
