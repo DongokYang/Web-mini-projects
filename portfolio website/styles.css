@@ -1,43 +1,272 @@
+/*
+    Project 4 Website
+    Name: Dongok Yang
+    Date: 2023.04.18
+    Description: This is an Css file used for Project 4 Website
+*/
+
 body {
-	background: linear-gradient(to right, #bbaaff, #f0e6ff);
-	font-family: Calibri;
+  background: linear-gradient(to right, #bbaaff, #f0e6ff);
+  font-family: Calibri;
 }
 
+#headerpart {
+  color: #ffffff;
+  font-size: calc(0.9vw + 1.2em);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2.5%;
+  margin-bottom: 2.5%;
+}
+h1 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-size: 4vw;
+}
+nav .nav-items:hover,
+nav .nav-items:focus {
+  background-color: #f0f0f0;
+  cursor: pointer;
+}
+nav {
+  background-color: #ffffff;
+  color: black;
+  width: 30%;
+  height: calc(var(--width) * 3);
+  border-radius: 10px;
+  margin-left: 60%;
+  display: flex;
+  justify-content: space-between;
+}
+nav .nav-items {
+  margin: 2.5%;
+  border-radius: 10px;
+  width: 20%;
+  height: calc(var(--width) * 3);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: calc(1vw + 0.2em);
+}
+nav img {
+  width: 50%;
+  margin-top: 5px;
+}
 
-#header {
-	color:#FFFFFF ;
-	background-color:#FFFFFF ;
-}
-#navigation {
-	background-color:#FFFFFF ;
-	color: red;
-	width: 30%;
-	height: 80px;
-	border-radius: 10px;
-	margin-left: 60%;
-	display: flex;
-    justify-content: space-between;
-}
-#navigation .nav-items{
-	margin-top: 10px;
-	margin-left: 2.5%;
-	margin-right: 2.5%;
-    background-color: blue;
-	width: 20%;
-	height: 60px;
+#current_interest {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
-#navigation img {
-    width: 50px;
+#current_interest_image {
+  max-width: 95%;
+  height: auto;
 }
 
-#content {
-	width: 80%;
-	height: 300px;
-	margin: 30px auto;
-	border-radius: 10px;
-	border-radius: 35px 25px 3px;
-	-moz-border-radius: 35px 25px 3px;
-	background-color:#FFFFFF ;
-	
+section {
+  width: 80%;
+  margin: 30px auto;
+  border-radius: 35px 25px 3px;
+  background-color: #ffffff;
+  padding-left: 2%;
+  padding-right: 2%;
+  padding-bottom: 2%;
+}
+section h2 {
+  border-bottom: 2px solid #bbaaff;
+  padding-top: 10px;
+  padding-left: 20px;
+  padding-bottom: 5px;
+}
+
+.box-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  max-width: 700px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+.box-container a {
+  padding-bottom: 15px;
+}
+
+.box {
+  width: calc(50% - 20px);
+  margin: 10px;
+  height: 250px;
+  box-shadow: 0px 0px 5px #bbaaff;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: black;
+}
+
+.box img {
+  width: 80%;
+  height: 70%;
+  object-fit: contain;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.box h3 {
+  text-align: center;
+  margin: 0;
+  padding: 0 5px;
+}
+
+@media (min-width: 768px) {
+  .box {
+    width: calc(33.33% - 20px);
+  }
+  .box-container {
+    max-width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  nav {
+    width: 80%;
+    margin-left: 10%;
+  }
+  h1 {
+    font-size: 30px;
+  }
+}
+@media (max-width: 480px) {
+  section {
+    width: 95%;
+  }
+}
+
+.experience {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 20px;
+  border: 2px solid #bbaaff;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.experience-img {
+  width: 100px;
+  margin-right: 15%;
+  margin-left: 5%;
+}
+
+.experience-description {
+  flex: 1;
+}
+
+#contactForm {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px #bbaaff;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+button[type="submit"],
+button[type="reset"] {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-top: 10px;
+  background-color: #0075f3;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover,
+button[type="reset"]:hover {
+  background-color: #0056b3;
+}
+
+.error {
+  color: red;
+  margin-top: 0px;
+  display: none;
+}
+
+#error {
+  display: none;
+  color: red;
+}
+
+input:focus,
+textarea:focus {
+  background-color: #ffffcc;
+  color: black;
+}
+
+input:invalid,
+textarea:invalid {
+  background-color: #ff9999;
+  color: white;
+}
+
+#footerpart {
+  color: white;
+  text-align: center;
+  padding: 20px;
+  left: 0;
+  bottom: 0;
+  width: 80%;
+  margin-left: 10%;
+}
+
+#footerpart a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+  font-size: 12px;
+}
+
+#footerpart a:hover {
+  text-decoration: underline;
+}
+.footer-copy {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 11px;
+}
+.social-links a:hover {
+  text-decoration: underline;
+}
+
+.social-icon {
+  width: 12px;
+  height: auto;
+  margin-right: 5px;
+  vertical-align: middle;
 }
